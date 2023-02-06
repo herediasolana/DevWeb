@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Signika+Negative&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body{
+    
+    background-color:rgb(240, 213, 221);
+
+}
+
+header{
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* ENCABEZADO SUPERIOR */
+.header_superior{
+    
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    }
+
+
+
+/* MENU */
+.container_menu{
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: rgb(231, 180, 196);
+
+}
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+        
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+}
+
+nav li{
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin-right: 1.5rem;
+    list-style: none;
+    position: relative;
+
+}
+
+.menu li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 14px;
+    padding: 14px;
+    transition: all 300ms ease;
+}
+.menu li a:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(214, 97, 136);
+    box-shadow: 0px 0px 10px 0px;
+}
+/* SUBMENU */
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 97, 136);
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    box-shadow: 0px 0px 10px 0px;
+    z-index: 10;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+nav ul li ul:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solidt transparent;
+    border-right: 12px solidt transparent;
+    border-bottom: 12px solidt transparent;
+    position: absolute ;
+    top: -12px;
+    left: 20px;
+}
+nav ul li ul a{
+    display: block;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+nav ul li ul a:hover{
+    padding-left: 14px;
+    font-size: 15px;
+    
+}
+
+/* cuerpo */
+
+h1{
+    width: 100%;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: palevioletred;
+    text-align: center;
+    color: #fefdfd;
+}
+img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    padding: 30px;
+    
+}
+.contenido{
+    display: flex;
+    margin: 60px;
+}
+.seccion1{
+    width: 80%;
+    border-right: 30px;
+    color: rgb(203, 165, 194);
+}
+
+.seccion1 h2{
+    color: palevioletred;
+}
+
+.contenedor_frases{
+    color: palevioletred;
+    padding: 20px;
+}
+.frases {
+    color: rgb(254, 252, 253);
+    background-color: gray;
+    padding: 100px;
+    font-size: 20px;
+}
+/* Pie de Pagina */
+
+.footer{
+    width: 100%;
+    background-color: rgb(231, 180, 196);
+    text-align: center;
+    display: inline-block;
+}
+
+.footer .grupo1{
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: small;
+}
+.grupo2{
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
